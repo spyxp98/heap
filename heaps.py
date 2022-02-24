@@ -7,11 +7,10 @@ def custom_comparator(lhs, rhs):
     return lhs[0] < rhs[0]
 
 class minHeap:
-# Используем представление в виде листа
+# Используем представление в виде листа для бинарного дерева
     def __init__(self, comparator=default_comparator):
         self.items = []
         self.comparator = comparator
-# self.items = [[curr_time, thread_number]]
 
     def get_parent(self, i):
         return (i - 1) // 2
